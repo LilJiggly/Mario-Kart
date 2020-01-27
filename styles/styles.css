@@ -1,0 +1,78 @@
+html,
+body {
+  background-color: white;
+  font-size: 1em;
+  font-family: sofia pro;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sky,
+.grass,
+.road {
+  position: relative;
+}
+
+.sky {
+  height: 40%;
+  background: skyblue;
+}
+
+.grass {
+  height: 30%;
+  background: seagreen;
+}
+
+.road {
+  height: 30%;
+  background: dimgray;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.lines {
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 84%;
+}
+
+.mario {
+  width: 8em;
+  position: absolute;
+  top: 65%;
+  left: -20vw;
+  animation: drive 5s infinite;
+}
+
+@keyframes drive {
+  from {
+    transform: translatex(-10);
+  }
+  to {
+    transform: translateX(160vw);
+  }
+}
+
+.luigi {
+  width: 8em;
+  position: absolute;
+  top: 80%;
+  left: -20vw;
+  animation: drive2 6s infinite;
+}
+
+@keyframes drive2 {
+  from {
+    transform: translatex(-20);
+  }
+  to {
+    transform: translateX(190vw);
+  }
+}
